@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 5px #adacac;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .home {
+    text-decoration: none;
+    color: rgb(57, 57, 198);
+    font-weight: 600;
+}
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    background-image: url("img/banner-remd.jpg");
+    background-position: top;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay escuro */
+    z-index: 100;
+}
+
+
+.desc-banner {
+    position: relative;
+    top: 0rem;
+}
+
+.desc-banner h2 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.desc-banner p {
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-banner {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #adacac;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-banner:hover {
+    transform: scale(1.05);
+    transition: .1s;
+    box-shadow: 0 0 50px #adacac;
+}
+
+.conteudo-1 {
+    text-align: center;
+    background-color: #000000f0;
+    height: auto;
+    padding: 20px;
+}
+
+.conteudo-1 h2 {
+    font-size: 3rem;
+    color: #adacac;
+}
+
+.conteudo-1 p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    width: 600px;
+    text-align: center;
+    margin: 20px auto;
+    color: #adacac;
+}
+
+.cards-img {
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.cards-img img {
+    width: 100%;
+    height: 70vh;
+}
+
+.conteudo-2 {
+    text-align: center;
+    background-image: url("img/img-remed-1.jpg");
+    width: 100%;
+    height: 30vh;
+    background-position: top;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.conteudo-2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay escuro */
+    z-index: 1;
+}
+
+.conteudo-2 h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.conteudo-2 p {
+    color: #fff;
+}
+
+.clientes {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bloco-cliente {
+    margin-top: 20px;
+}
+
+.bloco-cliente p {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .banner {
+        width: 100%;
+        height: 90vh;
+        background-image: url("img/banner-remd.jpg");
+        background-position: top;
+        background-size: cover;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .banner::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Overlay escuro */
+        z-index: 100;
+    }
+    
+    
+    .desc-banner {
+        position: relative;
+        top: 0rem;
+    }
+    
+    .desc-banner h2 {
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .desc-banner p {
+        margin-top: 10px;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .button-banner {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        padding: 15px;
+        width: 250px;
+        margin: 0 auto;
+        border-radius: 20px;
+        text-decoration: none;
+        color: #adacac;
+        font-weight: 600;
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .button-banner:hover {
+        transform: scale(1.05);
+        transition: .1s;
+        box-shadow: 0 0 50px #adacac;
+    }
+    
+    .conteudo-1 {
+        text-align: center;
+        background-color: #000000f0;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .conteudo-1 h2 {
+        font-size: 2rem;
+        color: #adacac;
+    }
+    
+    .conteudo-1 p {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+        color: #adacac;
+    }
+    
+    .cards-img {
+        display: flex;
+        margin-top: 5rem;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .cards-img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .conteudo-2 {
+        text-align: center;
+        background-image: url("img/img-remed-1.jpg");
+        width: 100%;
+        height: 30vh;
+        background-position: top;
+        background-size: cover;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .conteudo-2::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Overlay escuro */
+        z-index: 1;
+    }
+    
+    .conteudo-2 h2 {
+        text-align: center;
+        font-size: 3rem;
+        color: #fff;
+    }
+    
+    .conteudo-2 p {
+        color: #fff;
+    }
+    
+    .clientes {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .bloco-cliente {
+        margin-top: 20px;
+    }
+    
+    .bloco-cliente p {
+        margin-top: 10px;
+        font-weight: 600;
+    }
+}
